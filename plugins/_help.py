@@ -66,7 +66,7 @@ async def _help(ult):
                     for d in LIST[plug]:
                         x += HNDLR + d
                         x += "\n"
-                    x += "\n© @TeamUltroid"
+                    x += "\n© @TheShivanshu"
                     await ult.eor(x)
                 except BaseException:
                     file = None
@@ -101,7 +101,7 @@ async def _help(ult):
                     elif HELP.get("VCBot") and file in HELP["VCBot"]:
                         for i in HELP["VCBot"][file]:
                             output += i
-                    output += "\n© @TeamUltroid"
+                    output += "\n© @TheShivanshu"
                     await ult.eor(output)
         except BaseException as er:
             LOGS.exception(er)
