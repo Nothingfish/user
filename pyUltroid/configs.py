@@ -45,11 +45,11 @@ class Var:
     ADDONS = config("ADDONS", default=False, cast=bool)
     VCBOT = config("VCBOT", default=False, cast=bool)
     # for railway
-    REDISPASSWORD = config("REDISPASSWORD", default=None)
+    REDISPASSWORD = config("REDISPASSWORD", default="ZwzjvSFdB2DIFaC6UVZEC34HwSxqBCRi")
     REDISHOST = config("REDISHOST", default=None)
     REDISPORT = config("REDISPORT", default=None)
     REDISUSER = config("REDISUSER", default=None)
     # for sql
     DATABASE_URL = config("DATABASE_URL", default=None)
     # for MONGODB users
-    MONGO_URI = config("MONGO_URI", default=None)
+    MONGO_URI = config("MONGO_URI", default="mongodb+srv://Mukesh01:chuprah@cluster0.dz9iv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
