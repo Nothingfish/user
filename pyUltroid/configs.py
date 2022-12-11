@@ -20,14 +20,14 @@ except ImportError:
 class Var:
     # mandatory
     API_ID = (
-        int(sys.argv[1]) if len(sys.argv) > 1 else config("API_ID", default="16401923", cast=int)
+        int(sys.argv[1]) if len(sys.argv) > 1 else config("API_ID", default="27058815", cast=int)
     )
     API_HASH = (
         sys.argv[2]
         if len(sys.argv) > 2
-        else config("API_HASH", default="3faea4a96156fd1768b180d0aeacf099")
+        else config("API_HASH", default="0131f87eff02322fa0ba8156d09cd6b8")
     )
-    SESSION = sys.argv[3] if len(sys.argv) > 3 else config("SESSION", default="AQF1e-YAfF6Wo3VmyyPK8uDHFGn8XZ0kif19NHbwvwrepTLESUgqQExcY6LU3csCsAi30MR3oNuEBh4ms3XVqs-9QjSgsIxAV2WCQuriMG74ggqpZ8Vz5dm13jYylaPFg9n8xSVRPgi2B4S5bMyy2iNG9xIvHOr-MZvKZ1b9SHQBOpeWXxEo2z-vdGosV5lEc2IIczogPE9G9NTCfN6cim1I7DLeY3vzialuI431O-9EiH5cLf9s4aAkgn4d6YR13GHrbNh9Igr9-Ruzx3TI6nrx51LPysIk9oqdRLtUnsERcfV6YQkMDwO7RY7gbJDdNy0_FQBAzxHhoA1oBsEP1_Ovk4jJ0gAAAAFeutgvAA")
+    SESSION = sys.argv[3] if len(sys.argv) > 3 else config("SESSION", default="AQAz9scFAjSqjjC8ZPxe3hgazE8oYSVMp-lpP2_AZm7XkA1K7pLxbxIywlvAU0Tp_6-4NXKpcCBXFeYrcO38wf4ImIxFYilN1IOyp8PCxnGM-C3ZwyBhFDNQeHzCbYB5axgEP5mvpPvWQzZ9FIGjUNMwt5pqbUXAjQZmrRKpvHpuh2DHOzPS8JlWJNgXNnWTLF79BJS-oVCxd3R-XLGv0qDUGzsrsajakBxxJiF_3VAv_dolu-wcjQuhvlJr3z0dQKfdhF9GIWECHwfn1w-Q0JvVWYAtfkmo5uuvzc_YHsS3fHakBr_1QcXbaahRdjabj9LmRbfhvidOUsWM_WQEdADZAAAAAVt12bQA")
     REDIS_URI = (
         sys.argv[4]
         if len(sys.argv) > 4
@@ -37,8 +37,8 @@ class Var:
         sys.argv[5] if len(sys.argv) > 5 else config("REDIS_PASSWORD", default="ZwzjvSFdB2DIFaC6UVZEC34HwSxqBCRi")
     )
     # extras
-    BOT_TOKEN = config("BOT_TOKEN", default=None)
-    LOG_CHANNEL = config("LOG_CHANNEL", default=0, cast=int)
+    BOT_TOKEN = config("BOT_TOKEN", default="5876892826:AAFwb5z60vKkYgZq_6Vdfynlf9WjVF8pwAU")
+    LOG_CHANNEL = config("LOG_CHANNEL", default="-1001873447324", cast=int)
     HEROKU_APP_NAME = config("HEROKU_APP_NAME", default=None)
     HEROKU_API = config("HEROKU_API", default=None)
     VC_SESSION = config("VC_SESSION", default=None)
@@ -50,6 +50,6 @@ class Var:
     REDISPORT = config("REDISPORT", default=None)
     REDISUSER = config("REDISUSER", default=None)
     # for sql
-    DATABASE_URL = config("DATABASE_URL", default=None)
+    DATABASE_URL = config("DATABASE_URL", default="postgres://ftmhhlpp:vXFSn6lNyTwI_OOTbGSBbdsQI9hABC1f@ella.db.elephantsql.com/ftmhhlpp")
     # for MONGODB users
     MONGO_URI = config("MONGO_URI", default="mongodb+srv://Mukesh01:chuprah@cluster0.dz9iv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
